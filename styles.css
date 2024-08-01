@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    background-image: url(math.jpg);
+    background-size: cover;
+    backdrop-filter: blur(3px);
+
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background: url('bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #7cd0ea;
+}
+
+.display {
+    background-color: #909a9c;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #eee;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+#clear {
+    background-color: #f44336;
+    color: white;
+}
+
+#clear:hover {
+    background-color: #e53935;
+}
+
+#equals {
+    background-color: #4caf50;
+    color: white;
+    grid-column: span 4;
+}
+
+#equals:hover {
+    background-color: #43a047;
+}
